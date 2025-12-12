@@ -7,9 +7,10 @@ interface ResultCardProps {
   type: 'hair' | 'beard';
 }
 
-const BASE_URL = 'https://raw.githubusercontent.com/Parth-Bisht-227/StyleScout-AI/main/public/styles/';
+// Switched to local path to use the updated images in public/styles/
+const BASE_URL = 'https://raw.githubusercontent.com/Parth-Bisht-227/Sharp.AI/main/public/styles/';
 
-// Map of style keywords to HOSTED GitHub Raw image paths
+// Map of style keywords to local image paths
 const STYLE_IMAGES: Record<string, string> = {
   // --- HAIRSTYLES ---
   'crop': `${BASE_URL}texturedcrop.jpg`,
